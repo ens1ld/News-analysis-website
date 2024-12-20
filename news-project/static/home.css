@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.background {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the left */
+    height: 100vh; /* Full viewport height */
+    padding-top: 120px; /* Adjust this value to make the content lower */
+    padding-left: 150px; /* Adjust this value to move the content more to the right */
+}
+
+.form-container {
+    width: 600px; /* Set the width of the form */
+    text-align: left; /* Align form elements to the left */
+    margin-bottom: 0px; /* Adds space between form and navigation */
+    z-index: 2; /* Make sure the form is above the navigation */
+}
+
+.navigation-container {
+    text-align: left; /* Align navigation links to the left */
+    width: 600px; /* Same width as the form */
+    z-index: 1; /* Make sure the navigation stays behind the form */
+}
+
+form {
+    width: 100%; /* Ensure the form takes the full width of the container */
+    text-align: center;
+    margin-bottom: 0px; /* Adds space below the form */
+}
+
+/* Style for form elements */
+textarea, input, select, button {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for textboxes */
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+}
+
+input, select {
+    width: 100%;
+    height: 40px;
+}
+
+button {
+    background-color: #0055aa;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #003d7a;
+}
+
+/* Navigation Links */
+.navigation-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-container li {
+    margin-bottom: 10px;
+}
+
+.navigation-container a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.navigation-container a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflow */
+}

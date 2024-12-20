@@ -1,0 +1,86 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('/static/results.jpg'); /* Correct path to your image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeat */
+    background-color: #f4f4f4; /* Fallback color */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); /* Dark background with transparency */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Content Wrapper */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #34495e;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+/* Styling for the text block */
+.content p {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}

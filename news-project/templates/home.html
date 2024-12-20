@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="background">
+        <!-- Analyze Form -->
+        <div class="form-container">
+            <form method="POST">
+                <textarea name="text_input" placeholder="Enter news text here"></textarea>
+                <input type="text" name="url_input" placeholder="Or paste a news website link">
+                <select name="category">
+                    <option value="TOP CHANNEL">TOP CHANNEL</option>
+                    <option value="RTSH">RTSH</option>
+                    <option value="TV KLAN">TV KLAN</option>
+                </select>
+                <select name="month">
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="navigation-container">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="{{ url_for('history') }}">View History</a></li>
+                <li><a href="{{ url_for('statistics') }}">View Statistics</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

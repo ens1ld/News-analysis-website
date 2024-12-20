@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+</head>
+<body>
+    <h1>Analysis History</h1>
+    
+    {% if records %}
+        <div class="history-container">
+            {% for record in records %}
+                <div class="history-entry">
+                    <h2>Analysis #{{ loop.index }}</h2>
+                    <p><strong>Text:</strong> {{ record[1] }}</p>
+                    <p><strong>Country:</strong> {{ record[2] }}</p>
+                    <p><strong>Sentiment:</strong> {{ record[3] }}</p>
+                    <p><strong>Keywords:</strong> {{ record[4] }}</p>
+                    <p><strong>Summary:</strong> {{ record[5] }}</p>
+                    <p><strong>Date:</strong> {{ record[6] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No analysis history available.</p>
+    {% endif %}
+    
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
